@@ -1,0 +1,30 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{B00D1475-43A3-1A95-DCF0-B388C54BB886}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Bachelor_Tim",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GoogleARCore",
+			"Enabled": true
+		},
+		{
+			"Name": "GoogleARCoreServices",
+			"Enabled": true
+		},
+		{
+			"Name": "AppleARKit",
+			"Enabled": true
+		}
+	]
+}
