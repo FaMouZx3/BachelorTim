@@ -37,6 +37,8 @@ void AARPlaneRenderer::Tick(float DeltaTime)
 	}
 }
 
+//Updated die bereits getrackten Planes sowie die neu getrackten und lässt dann das PlaneMesh darauf Rendern um eine Visuelle Unterstützung
+//für die Benutzer zu schaffen
 void AARPlaneRenderer::UpdatePlane(UARPlaneGeometry* ARCorePlaneObject)
 {
 	UProceduralMeshComponent* PlanePolygonMeshComponent = nullptr;
@@ -95,6 +97,7 @@ void AARPlaneRenderer::UpdatePlane(UARPlaneGeometry* ARCorePlaneObject)
 	}
 }
 
+//Zeichnet das Plane Mesh auf die getrackte Fläche
 void AARPlaneRenderer::UpdatePlaneMesh(UARPlaneGeometry* ARCorePlaneObject, UProceduralMeshComponent* PlanePolygonMeshComponent)
 {
 	// Update polygon mesh vertex indices, using triangle fan due to its convex.

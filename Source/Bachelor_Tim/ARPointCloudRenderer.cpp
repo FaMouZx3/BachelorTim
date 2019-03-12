@@ -35,6 +35,7 @@ void AARPointCloudRenderer::Tick(float DeltaTime)
 	RenderPointCloud();
 }
 
+//Registriert die getrackten Ebenen und die Kanten/Kennzeichen darauf und zeichnet Points an diese Kanten
 void AARPointCloudRenderer::RenderPointCloud()
 {
 	UWorld* World = GetWorld();
